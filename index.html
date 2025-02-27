@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <section id="estudianteForm">
+      <h3>Datos del estudiante</h3>
+      <input type="text" id="estudianteForm_inNombre" placeholder="Nombre"></input>
+      <input type="text" id="estudianteForm_inCedula" placeholder="cedula"></input>
+      <input type="text" id="estudianteForm_inSexo" placeholder="sexo"></input>
+      <input type="text" id="estudianteForm_inNota" placeholder="nota"></input>
+      <button id="estudianteForm_btProcesar">Procesar</button> 
+    </section>
+
+    <section id="mainForm">
+      <h3>Resultados de Examen</h3>
+      <label> Valor</label>
+      <input id="mainForm_inValor" placeholder="valor"></input>
+      <label> Nota mínima para aprobar</label>
+      <input id="mainForm_inMinAprueba" placeholder="minimo aprueba"></input>
+      <button id="mainForm_btIniciar">Iniciar</button>
+    </br>
+
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Cedula</th>
+          <th>Sexo</th>
+          <th>Nota</th>
+        </tr>
+      </table>
+
+      <div id="salida"></div>
+    </section>
+
+  </body>
+    <script type="module">
+      import Cl_index from "./js/index.js";
+      new Cl_index()
+    </script>
+</html>
