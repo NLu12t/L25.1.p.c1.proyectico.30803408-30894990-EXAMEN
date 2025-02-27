@@ -38,16 +38,15 @@ export default class Cl_vExamen {
     estudianteMayorNota,
     porcentajeDeChicasAprobadas
   ) {
-    this.tabla.innerHTML = `<tr>
-            <td>${this.mEstudiante.nombre}</td>
-            <td>${this.mEstudiante.cedula}</td>
-            <td>${this.mEstudiante.sexo}</td>
-            <td>${this.mEstudiante.nota}</td>
-            </tr>`;
+    this.tabla.innerHTML += `<tr>
+      <td>${this.mEstudiante.nombre}</td>
+      <td>${this.mEstudiante.cedula}</td>
+      <td>${this.mEstudiante.sexo}</td>
+      <td>${this.mEstudiante.nota}</td>
+      </tr>`;
     this.salida.innerHTML = `
-            <br>Porcentaje de estudiantes aprobados: ${porcentajeDeAprobados.toFixed(2)}%
-            <br>Estudiante con la Mayor Nota: ${estudianteMayorNota}
-            <br>Porcentaje de Chicas Aprobadas: ${porcentajeDeChicasAprobadas.toFixed(2)}%
-            `;
+      <br>Porcentaje de estudiantes aprobados: ${porcentajeDeAprobados.toFixed(2)}%
+      <br>Estudiante con la Mayor Nota: ${estudianteMayorNota}
+      <br>Porcentaje de Chicas Aprobadas: ${porcentajeDeChicasAprobadas.toFixed(2)}% `;
   }
 }
