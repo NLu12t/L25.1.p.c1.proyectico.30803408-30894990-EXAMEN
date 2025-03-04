@@ -11,6 +11,8 @@ input {
   display: block;
 }
 section {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 48, 105);
   margin-top: 10px;
+  padding: 10px;
+  background-color: #fef9f9;
 }

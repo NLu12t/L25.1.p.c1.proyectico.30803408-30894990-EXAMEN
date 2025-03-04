@@ -22,12 +22,13 @@ export default class Cl_mExamen {
   get minAprueba() {
     return this._minAprueba;
   }
+
   procesarEstudiante(estu) {
     this.cntEstudiantes++;
     if (estu.nota >= this.minAprueba) this.cntEstuAprobados++;
     if (estu.nota > this.mayor) {
       this.mayor = estu.nota;
-      this.estuMayNota = estu.nombre;
+      this.estuMayNota = estu.cedula;
     }
     if (estu.sexo === "F") this.cntChicas++;
     if ((estu.sexo === "F") && (estu.nota >= this.minAprueba))
